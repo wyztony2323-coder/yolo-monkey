@@ -1,0 +1,40 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Model weights and exported artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+
+# Training/evaluation outputs
+result_*/
+runs/
+wandb/
+*.log
+
+# Generated datasets and large caches
+dataset_split_631/
+hnq_dataset/
+*.cache
+
+# Videos and bulky diagnostics
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.gif
+ultralytics_upstream_vs_local_*
+
+# Local/editor files
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+
