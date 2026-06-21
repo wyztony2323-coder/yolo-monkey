@@ -138,29 +138,5 @@ python tools/train_hnq_refiner.py `
   --out_dir result_hnq_refiner_clean
 ```
 
-## 不建议提交到 GitHub 的内容
 
-该目录下包含大量训练输出、权重、缓存和诊断产物。推送代码仓库时建议排除：
-
-- `*.pt`
-- `result_*/`
-- `hnq_dataset/crops/`
-- `dataset_split_631/`
-- `__pycache__/`
-- `*.mp4`
-- `*.avi`
-- `*.log`
-- 大型图片/特征可视化输出
-
-建议只提交源码、配置、文档和少量可复现实验脚本。
-
-## 项目状态
-
-当前推荐的最终方案：
-
-```text
-单帧模型：yolov8s_p2_respam_p2only
-视频部署：respam_p2only + TrackRecover
-候选研究分支：HNQ refiner、Hard Negative Loss
-已淘汰方向：P2 auxiliary-only、P2-DecoupledHead、P2 feature EMA、低照度强增强、继续堆叠 P2 模块
 ```
